@@ -227,7 +227,7 @@ function App() {
         <button
           className="bg-red-500 text-white px-4 py-2 rounded-md hover:bg-red-700 transition duration-300 ease-in-out shadow-md"
           onClick={() => {
-            sendPvuv(pagePaths[0]);
+            // sendPvuv(pagePaths[0]);
             navigate('/Page1');
           }}
         >
@@ -236,7 +236,7 @@ function App() {
         <button
           className="bg-red-500 text-white px-4 py-2 rounded-md hover:bg-red-700 transition duration-300 ease-in-out shadow-md"
           onClick={() => {
-            sendPvuv(pagePaths[1]);
+            // sendPvuv(pagePaths[1]);
             navigate('/Page2');
           }}
         >
@@ -245,7 +245,7 @@ function App() {
         <button
           className="bg-red-500 text-white px-4 py-2 rounded-md hover:bg-red-700 transition duration-300 ease-in-out shadow-md"
           onClick={() => {
-            sendPvuv(pagePaths[2]);
+            // sendPvuv(pagePaths[2]);
             navigate('/Page3');
           }}
         >
