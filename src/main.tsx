@@ -4,7 +4,9 @@ import router from './router'
 // import { Provider } from 'react-redux'
 import { RouterProvider } from 'react-router-dom'
 
-import { Monitor } from "../dist/index";
+
+import { Monitor } from "monitor-trace";
+// import { Monitor } from "../dist/index";
 
 // 初始化监控并配置性能数据上报地址
 const monitor = new Monitor({

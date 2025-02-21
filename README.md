@@ -1,13 +1,33 @@
 # 用于监控sdk包的测试
 
+## 项目结构
 
-白屏异常监控
-功能概述 ✅
-1. 触发白屏页面跳转
-在 demo 页面中，点击与白屏异常按钮，系统将自动导航至白屏页面路由。这一操作开启了后续的白屏监控流程。
-2. 实时白屏监控启动
-一旦刷新页面或跳转路由，SDK 会实时监控页面是否出现白屏异常。
-3. 异常检测与响应
-用户可以根据实际需求自主设置检测白屏异常的时间间隔。当达到预设时间且系统检测到白屏异常时，会迅速弹出白屏警示框。
-4. 数据存储与展示
-检测到白屏异常后，系统会将异常的详细信息发送至数据库进行存储。这些信息包括异常发生的时间、页面相关参数等，为后续的分析和处理提供有力支持。同时，这些异常数据会在 web 平台上进行展示，方便用户随时查看和管理。
+```
+react-test-sdk/
+├── public/                  # 静态资源目录
+│   └── vite.svg             # Vite logo
+├── src/                     # 源代码目录
+│   ├── pages/               # 页面组件
+│   │   ├── demoPage.tsx     # 示例页面
+│   │   ├── clickPage/       # 点击事件测试页面
+│   │   │   └── clickPages.tsx
+│   │   └── whiteScreenPage/ # 白屏测试页面
+│   │       └── whiteScreen.tsx
+│   ├── router/              # 路由配置
+│   │   └── index.tsx
+│   ├── api/                 # API接口
+│   │   └── index.ts
+│   ├── assets/              # 静态资源
+│   │   └── react.svg        # React logo
+│   ├── interface/           # 类型定义
+│   │   └── index.ts
+│   ├── index.css            # 全局样式
+│   ├── main.tsx             # 应用入口
+│   └── vite-env.d.ts        # Vite环境类型
+├── test/                    # 测试目录
+│   └── test.js              # 测试用例
+├── .gitignore               # Git忽略配置
+├── package.json             # 项目依赖配置
+└── vite.config.ts           # Vite配置
+```
+
